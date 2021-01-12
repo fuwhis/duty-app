@@ -48,7 +48,7 @@ class _TodoListState extends State<TodoList> {
                   height: 100,
                   child: Text(
                     'Empty task',
-                    style: TextStyle(fontSize: 10),
+                    style: TextStyle(fontSize: 12),
                   ),
                 ),
               );
