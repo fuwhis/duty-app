@@ -44,10 +44,10 @@ class _TodoListState extends State<TodoList> {
             case ConnectionState.waiting:
               return Center(
                 child: Container(
-                  width: 70,
-                  height: 70,
+                  width: 100,
+                  height: 100,
                   child: Text(
-                    'Empty',
+                    'Empty task',
                     style: TextStyle(fontSize: 10),
                   ),
                 ),
