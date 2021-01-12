@@ -41,6 +41,17 @@ class _TodoListState extends State<TodoList> {
                       ),
                     );
                   });
+            case ConnectionState.waiting:
+              return Center(
+                child: Container(
+                  width: 70,
+                  height: 70,
+                  child: Text(
+                    'Empty',
+                    style: TextStyle(fontSize: 10),
+                  ),
+                ),
+              );
             case ConnectionState.none:
             default:
               return Center(
