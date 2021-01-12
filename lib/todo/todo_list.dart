@@ -12,6 +12,15 @@ class TodoList extends StatefulWidget {
 
 class _TodoListState extends State<TodoList> {
   @override
+  void didChangeDependencies() {
+    // TODO: implement didChangeDependencies
+    super.didChangeDependencies();
+
+    var bloc = Provider.of<TodoBloc>(context);
+    bloc.initData();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Consumer<TodoBloc>(
       builder: (context, bloc, child) => StreamBuilder<List<Todo>>(
